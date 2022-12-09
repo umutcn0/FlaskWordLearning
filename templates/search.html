@@ -1,0 +1,80 @@
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    body {
+        margin: 0px;
+        font-family: "Roboto", 'Times New Roman', Times, serif;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .wrap{
+        text-align: center;
+        box-sizing: border-box;
+        color: white;
+        width: 50%;
+        position: relative;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1 !important;
+        }
+    .mid-text{
+        font-size: 50px;
+        font-weight: 700;
+        padding-bottom: 50px;
+        color: black;
+    }
+    .search{
+       position: relative;
+       box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+         
+    }
+    .search input{
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+    }
+
+    .search input:focus{
+    box-shadow: none;
+    border: 2px solid blue;
+    }
+    .search .fa-search{
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    }
+    .search button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: blue;
+    }
+</style>
+<body>
+    <div class="wrap">
+        <h1 class="mid-text">Search to find description of words</h1>
+            <form method="post">
+                <div class="row height d-flex justify-content-center align-items-center">
+                    <div class="col-md-10">
+                      <div class="search">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control" placeholder="Enter keyword.." name="search" value="{{
+                            request.form.search }}">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+            </form>
+        {% if error %}
+        <p class="error mid-text"><strong>Error:</strong> {{ error }}
+        {% endif %}
+    </div>
+    
+</body>

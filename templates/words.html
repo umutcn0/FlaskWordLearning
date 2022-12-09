@@ -1,0 +1,68 @@
+{% include 'navbar.html' %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    body {
+        margin: 0px;
+        font-family: "Roboto", 'Times New Roman', Times, serif;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .wrap{
+        box-sizing: border-box;
+        width: 50%;
+        position: relative;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+    .mid-text{
+        text-align: left;
+        padding-left: 60px;
+        font-size: 50px;
+        font-weight: 700;
+        color: black;
+    }
+    .description{
+        font-size: 30px;
+        font-weight:bold;
+        color: black;
+    }
+    .header{
+        font-size: 60px;
+        font-weight: 300;
+
+    }
+</style>
+<body>
+    <div class="wrap">
+        <div>
+            {% if error %}
+            <p style="color: red; text-align: center; font-size: 30px;" class="error"><strong>Error:</strong> {{ error }}
+            {% endif %}
+            <div class="search">
+                <div style="border: 2px solid #d6d4d4; !important" class="card">
+                    <div class="card-body">
+                        <p class="header"><i>{{word_name}}</i> </p>
+                        <p class="description">{{description}}</p>
+                    </div>
+                  </div>
+                <h1 class="mid-text"></h1>
+                
+            </div>
+        
+        <form class="mid" method="post">
+            <button type="submit" class="btn btn-dark btn-lg" name="button" value="add">
+                <i class="fa fa-plus"></i>   Add
+            </button>
+            <button type="submit" class="btn btn-dark btn-lg" name="button" value="back">
+                <i class="fa fa-arrow-left"></i>  Back
+            </button>
+        </form>
+        </div>
+        
+    </div>
+    
+</body>
