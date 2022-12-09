@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFlask_%2528web_framework%2529&psig=AOvVaw02oHrZThFcZ7LaZdJsrwQY&ust=1670697426008000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKD6vYaX7fsCFQAAAAAdAAAAABAE" height="300">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/2880px-Flask_logo.svg.png" height="300">
 </div>
 
 # Getting Started
@@ -31,3 +31,22 @@ settings={
     "API_KEY": "" // Enter a api key for WORDS API
     }
 ```
+### Login Page
+------------
+<a href="https://ibb.co/64HrMsV"><img src="https://i.ibb.co/fCkqg0B/login.png" alt="login" border="0" width="200"></a>
+<a href="https://ibb.co/23Qc8xB"><img src="https://i.ibb.co/zVYP8pw/register.png" alt="register" border="0" width="200"></a>
+### Search Page
+------------
+<a href="https://ibb.co/pj5VLqy"><img src="https://i.ibb.co/5hwpRZF/search.png" alt="search" border="0" width="200"></a>
+### Word Description
+------------
+<a href="https://ibb.co/BNJ5WKJ"><img src="https://i.ibb.co/GTD4Y3D/word.png" alt="word" border="0" width="200"></a>
+### Dashboard
+------------
+<a href="https://ibb.co/m5Wngqv"><img src="https://i.ibb.co/hFzGwWX/library.png" alt="library" border="0" width="200"></a>
+### Pratice
+------------
+<a href="https://ibb.co/sP7M5F2"><img src="https://i.ibb.co/qn6P0Rd/practice.png" alt="practice" border="0" width="200"></a>
+
+# Authors
+- Umut Can - [linkedin](https://www.linkedin.com/in/umut-can-0a7417157/)
