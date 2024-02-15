@@ -1,53 +1,48 @@
-<div align="center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/2880px-Flask_logo.svg.png" width="300px">
-</div>
-
 # Getting Started
-You can add new words to your library. You can pratice them on your dashboard. You can find out whih keyword that you don't know well.
+Meeting Organizer Project is a web application that manages individuals' meeting processes. The project is developed using the Django web framework in the Python language.
 
-### Technologies
-------------
-- [Python 3.x.x](https://www.python.org "Python 3.x.x")
-- [Flask](https://flask.palletsprojects.com/en/2.2.x/ "Flask")
-- [Flask sqlalchemy ](https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/ "Flask sqlalchemy ")
-- [Requests](https://requests.readthedocs.io/en/latest/ "Requests")
-- [Words API](https://www.wordsapi.com "Words API")
+### Prerequisites
+- Python 3.11.x
+- PostgreSQL
+- Django
 
-### Requirements
-------------
-Before start, you need to install Git, Python3.x.x and Vscode or etc.
-```swift
-# Clone this project
-$ git clone https://github.com/umutcn0/FlaskWordLearning/
-```
-Before run the project, you need to run **declarations.py**, it will create database for you.
-```swift
-python declarations.py
-```
+### Installation
+- Before running the application, you need to create a database on PostgreSQL.
+- Then, create a virtual environment and install the requirements in the project directory.
+- Inside the "meetingapp" folder, create a .env file and input the following data:
 
-Enter the relevant API keys and DB Path to run the project.
-```swift
-settings={
-    "DATABASE_PATH": "", // Enter your database path
-    "API_KEY": "" // Enter a api key for WORDS API
-    }
+```python
+SECRET_KEY=YOUR_SECRET_KEY
+DB_NAME=YOUR_DB_NAME
+DB_USER=YOUR_DB_USER
+DB_PASSWORD=YOUR_DB_PASSWORD
+DB_HOST=localhost
+DB_PORT=5432
 ```
-### Login Page
+- Now, you are ready to run the application.
+
+### Notes
+- **You can import the Postman collection file into your application to access and use the necessary endpoints.**
+- **You can use "manage.py test" within the application to execute the written tests.**
+
+### How It Works
+Among the main functionalities of the project are creating, editing, deleting, and viewing all your meetings.
+
+###Dashboard
 ------------
-<a href="https://ibb.co/64HrMsV"><img src="https://i.ibb.co/fCkqg0B/login.png" alt="login" border="0" width="800"></a>
-<a href="https://ibb.co/23Qc8xB"><img src="https://i.ibb.co/zVYP8pw/register.png" alt="register" border="0" width="800"></a>
-### Search Page
+<a href="https://ibb.co/qBnn848"><img src="https://i.ibb.co/XX44PdP/dashboard.png" alt="dashboard" border="0"></a>
+
+###Edit Page
 ------------
-<a href="https://ibb.co/pj5VLqy"><img src="https://i.ibb.co/5hwpRZF/search.png" alt="search" border="0" width="800"></a>
-### Word Description
+<a href="https://ibb.co/ZgK2QHz"><img src="https://i.ibb.co/X5pYnyx/edit-dash.png" alt="edit-dash" border="0"></a>
+
+###Creating Modal
 ------------
-<a href="https://ibb.co/BNJ5WKJ"><img src="https://i.ibb.co/GTD4Y3D/word.png" alt="word" border="0" width="800"></a>
-### Dashboard
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/XLngwHy/create.png" alt="create" border="0"></a>
+
+###Editing Modal
 ------------
-<a href="https://ibb.co/m5Wngqv"><img src="https://i.ibb.co/hFzGwWX/library.png" alt="library" border="0" width="800"></a>
-### Pratice
-------------
-<a href="https://ibb.co/sP7M5F2"><img src="https://i.ibb.co/qn6P0Rd/practice.png" alt="practice" border="0" width="800"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/QPwbDwR/edit.png" alt="edit" border="0"></a>
 
 # Authors
-- Umut Can - [Linkedin](https://www.linkedin.com/in/umut-can-0a7417157/)
+- Umut Can - [linkedin](https://www.linkedin.com/in/umut-can-0a7417157/)
